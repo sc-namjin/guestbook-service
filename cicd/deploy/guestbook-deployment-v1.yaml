@@ -38,15 +38,6 @@ spec:
       containers:
       - name: guestbook-service
         image: namjinpark/guestbook-service:0.0.1
-        livenessProbe:
-          initialDelaySeconds: 90
-          httpGet:
-            path: /actuator/health
-            port: 8080
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 8080
         ports:
         - containerPort: 8080
           name: http
