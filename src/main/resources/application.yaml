@@ -22,8 +22,8 @@ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://mysql:3306/app?autoReconnect=true
-    username: root
-    password: yourpassword
+    username: spuser
+    password: password
     test-on-borrow: true
     validation-query: SELECT 1
   jpa:
